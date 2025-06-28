@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decision Maker</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+    <h1 class="title">🎯 Spin That Wheel 🎯</h1>
+
+    <div class="wheel-container">
+        <canvas id="wheel" width="400" height="400"></canvas>
+        <div id="pointer">▼</div>
+    </div>
+    <div id="tooltip" class="tooltip"></div>
+
+    <h2 id="result" class="result-heading"></h2>
+
+    <div class="controls">
+        <button id="spin">🎡 Spin</button>
+        <button id="add-option">➕ Add Option</button>
+    </div>
+
+    <table class="options-table">
+        <thead>
+            <tr>
+                <th>S.No</th>
+                <th>Color</th>
+                <th>Option</th>
+                <th>Weight (%)</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="options-body"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
